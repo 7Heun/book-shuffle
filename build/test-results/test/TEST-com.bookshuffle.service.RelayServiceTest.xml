@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bookshuffle.service.RelayServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-29T04:28:55.473Z" hostname="Gae-MacBook-Pro.local" time="4.779">
+<testsuite name="com.bookshuffle.service.RelayServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-29T04:48:34.971Z" hostname="Gae-MacBook-Pro.local" time="5.08">
   <properties/>
-  <testcase name="책_릴레이_테스트()" classname="com.bookshuffle.service.RelayServiceTest" time="1.2"/>
-  <system-out><![CDATA[13:28:55.601 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.bookshuffle.service.RelayServiceTest]: RelayServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-13:28:55.681 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.bookshuffle.BookShuffleApplication for test class com.bookshuffle.service.RelayServiceTest
-13:28:55.730 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.bookshuffle.service.RelayServiceTest]: RelayServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-13:28:55.732 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.bookshuffle.BookShuffleApplication for test class com.bookshuffle.service.RelayServiceTest
+  <testcase name="책_릴레이_테스트()" classname="com.bookshuffle.service.RelayServiceTest" time="1.022"/>
+  <system-out><![CDATA[13:48:35.132 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.bookshuffle.service.RelayServiceTest]: RelayServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:48:35.230 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.bookshuffle.BookShuffleApplication for test class com.bookshuffle.service.RelayServiceTest
+13:48:35.296 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.bookshuffle.service.RelayServiceTest]: RelayServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:48:35.298 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.bookshuffle.BookShuffleApplication for test class com.bookshuffle.service.RelayServiceTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -16,17 +16,17 @@
 
  :: Spring Boot ::                (v4.0.6)
 
-2026-05-29T13:28:55.978+09:00  INFO 62425 --- [    Test worker] c.bookshuffle.service.RelayServiceTest   : Starting RelayServiceTest using Java 21.0.10 with PID 62425 (started by gae in /Users/gae/book-shuffle)
-2026-05-29T13:28:55.980+09:00  INFO 62425 --- [    Test worker] c.bookshuffle.service.RelayServiceTest   : No active profile set, falling back to 1 default profile: "default"
-2026-05-29T13:28:56.482+09:00  INFO 62425 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-29T13:28:56.536+09:00  INFO 62425 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 3 JPA repository interfaces.
-2026-05-29T13:28:56.845+09:00  INFO 62425 --- [    Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-05-29T13:28:56.897+09:00  INFO 62425 --- [    Test worker] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-05-29T13:28:57.258+09:00  INFO 62425 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-29T13:28:57.286+09:00  INFO 62425 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-05-29T13:28:57.447+09:00  INFO 62425 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a3a56de
-2026-05-29T13:28:57.449+09:00  INFO 62425 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-05-29T13:28:57.522+09:00  INFO 62425 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-05-29T13:48:35.602+09:00  INFO 65212 --- [    Test worker] c.bookshuffle.service.RelayServiceTest   : Starting RelayServiceTest using Java 21.0.10 with PID 65212 (started by gae in /Users/gae/book-shuffle)
+2026-05-29T13:48:35.603+09:00  INFO 65212 --- [    Test worker] c.bookshuffle.service.RelayServiceTest   : No active profile set, falling back to 1 default profile: "default"
+2026-05-29T13:48:36.110+09:00  INFO 65212 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-29T13:48:36.164+09:00  INFO 65212 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 3 JPA repository interfaces.
+2026-05-29T13:48:36.457+09:00  INFO 65212 --- [    Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-29T13:48:36.499+09:00  INFO 65212 --- [    Test worker] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-29T13:48:36.838+09:00  INFO 65212 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-29T13:48:36.861+09:00  INFO 65212 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-29T13:48:36.979+09:00  INFO 65212 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35744f8
+2026-05-29T13:48:36.981+09:00  INFO 65212 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-29T13:48:37.037+09:00  INFO 65212 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/bookshuffle?useSSL=false&serverTimezone=UTC&characterEncoding=UTF-8]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -38,11 +38,11 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-05-29T13:28:58.357+09:00  INFO 62425 --- [    Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-29T13:28:58.436+09:00  INFO 62425 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-29T13:28:58.509+09:00  INFO 62425 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-05-29T13:28:58.701+09:00  WARN 62425 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-05-29T13:28:59.034+09:00  INFO 62425 --- [    Test worker] c.bookshuffle.service.RelayServiceTest   : Started RelayServiceTest in 3.254 seconds (process running for 4.241)
+2026-05-29T13:48:37.893+09:00  INFO 65212 --- [    Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-29T13:48:38.124+09:00  INFO 65212 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29T13:48:38.270+09:00  INFO 65212 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-29T13:48:38.647+09:00  WARN 65212 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-29T13:48:39.018+09:00  INFO 65212 --- [    Test worker] c.bookshuffle.service.RelayServiceTest   : Started RelayServiceTest in 3.652 seconds (process running for 4.739)
 Hibernate: 
     insert 
     into
