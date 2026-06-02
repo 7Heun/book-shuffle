@@ -1,20 +1,16 @@
-package com.bookshuffle.exception;
+package com.bookshuffle.exception; // 이 패키지 위치가 중요!
 
-import com.bookshuffle.dto.ErrorResponse;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-@ControllerAdvice
+@RestControllerAdvice
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(IllegalArgumentException.class)
-    public ResponseEntity<ErrorResponse> handleIllegalArgument(IllegalArgumentException e) {
-        ErrorResponse response = ErrorResponse.builder()
-                .message(e.getMessage())
-                .status(HttpStatus.BAD_REQUEST.value())
-                .build();
-        return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<String> handleValidationExceptions(MethodArgumentNotValidException ex) {
+        String errorMessage = ex.getBindingResult().getAllErrors().get(0).getDefaultMessage();
+        return ResponseEntity.badRequest().body(errorMessage);
     }
 }

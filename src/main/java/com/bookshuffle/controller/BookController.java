@@ -2,6 +2,7 @@ package com.bookshuffle.controller;
 
 import com.bookshuffle.domain.Book;
 import com.bookshuffle.domain.User;
+import com.bookshuffle.dto.BookRequest;
 import com.bookshuffle.dto.BookResponse;
 import com.bookshuffle.dto.RelayHistoryResponse;
 import com.bookshuffle.repository.BookRepository;
@@ -9,6 +10,7 @@ import com.bookshuffle.repository.RelayChainRepository;
 import com.bookshuffle.repository.UserRepository;
 import com.bookshuffle.service.BookService;
 import com.bookshuffle.service.RelayService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,8 +29,8 @@ public class BookController {
 
     // 1. 책 등록 기능
     @PostMapping("/api/books/new")
-    public String register(@RequestBody Book book) {
-        bookService.registerBook(book);
+    public String register(@Valid @RequestBody BookRequest request) {
+        bookService.registerBook(request);
         return "책 등록 성공";
     }
 
