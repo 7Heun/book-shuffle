@@ -50,7 +50,8 @@ public class BookController {
     // 3. 책 정보 조회
     @GetMapping("/api/books/{bookId}")
     public BookResponse getBook(@PathVariable Long bookId) {
-        Book book = bookRepository.findById(bookId).orElseThrow();
+        Book book = bookRepository.findById(bookId).orElseThrow(()
+                -> new IllegalArgumentException("존재하지 않는 책입니다."));
 
         return BookResponse.builder()
                 .title(book.getTitle())
@@ -61,6 +62,10 @@ public class BookController {
     // 4. 책 릴레이 이력 조회
     @GetMapping("/api/books/{bookId}/history")
     public List<RelayHistoryResponse> getHistory(@PathVariable Long bookId) {
+        // 책이 존재하는지 확인
+        if (!bookRepository.existsById(bookId)) {
+            throw new IllegalArgumentException("존재하지 않는 책입니다.");
+        }
         return relayChainRepository.findByBookIdOrderByCreatedAtAsc(bookId).stream()
                 .map(relay -> RelayHistoryResponse.builder()
                         .fromNickname(relay.getFromUser().getNickname())
